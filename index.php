@@ -10,10 +10,53 @@
    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/jssor.slider.min.js"></script>
    <title>Restaurant Tour de Pisa</title>
 </head>
 <body>
-
+ <script>
+        jssor_1_slider_init = function() {
+            
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:1200,$Opacity:2}
+            ];
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 600);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            //responsive code end
+        };
+    </script>
 <div class="codepostal">
               <div class="resto">Chercher votre restaurant</div>
               <form method="GET" action="/restaurant">
@@ -68,7 +111,7 @@ Pour tout renseignements complémentaires, vous pouvez nous contacter soit par t
 <br></br>
 <br></br>
 		<li>tourdepisa</li>
-		<li>Téléphone: 03.29.29.13.13</li>
+		<li>Téléphone: 03 29 33 88 88</li>
 		<li>Adresse: 1 place du Général de Gaulle</li>
 		<li>Adresse mail: tourdepisa@wanadoo.fr</li>
 		
@@ -79,8 +122,38 @@ Pour tout renseignements complémentaires, vous pouvez nous contacter soit par t
 		</div>
 
 		<div class="presentation">
-			<img class="photo-pizzeria" src="http://cdn.ou-dejeuner.com/establishment/photo/establishment/29100-douarnenez/ma-pizzeria_35998_715.jpg">/
+	
+<div class="cadre">Bienvenue chez Tour de Pisa</div>
 
+    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 110px; width: 600px; height: 300px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="http://www.lo-sfizziu.com/resources/1/Pizzeria-lo-sfizziu.jpg" />
+            </div>
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="http://cdn.ou-dejeuner.com/establishment/photo/establishment/29100-douarnenez/ma-pizzeria_35998_715.jpg" />
+            </div>
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="http://www.restaurant-lebarock.com/images/restaurant-pizzeria/restaurant-pizzeria12.jpg" />
+            </div>
+            <a data-u="ad" href="http://www.jssor.com" style="display:none">jQuery Slider</a>
+        
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
+    </div>
+  
 		</div>
 
 		<div class="divers">
@@ -154,6 +227,8 @@ Pour tout renseignements complémentaires, vous pouvez nous contacter soit par t
 			</div>
 
 		</footer>
-
+  <script>
+        jssor_1_slider_init();
+    </script>
 </body>
 <html>
