@@ -23,7 +23,7 @@
             </div>
 
 <div class='top'></div>
-<div class='logo'></div>
+<a href="index.php"><div class='logo'></div></a>
 <div class='titre'>Tour de Pisa</div>
 <div class='tel'>03 29 33 88 88</div>
 <div class='sstitre'>Pizzas au feu de bois sur place ou à emporter</div>
@@ -61,7 +61,7 @@ Notre pizzéria est ouverte 7/7 jours. Voici nos horaires d'ouverture:
 </p>
 <br></br>
 <p>
-		<h3>Contact:</h3>
+		<h3 class="hor">Contact:</h3>
 		<br></br>
 		
 Pour tout renseignements complémentaires, vous pouvez nous contacter soit par téléphone soit par mail. Voici nos coordonnées:
@@ -104,7 +104,7 @@ Pour tout renseignements complémentaires, vous pouvez nous contacter soit par t
 				<h2><span>Tour de Pisa</span></h2>
 
 				<p class="footer-liens">
-					<a href="#">Accueil</a>
+					<a href="index.php">Accueil</a>
 					·
 					<a href="#">Blog</a>
 					·
@@ -112,7 +112,7 @@ Pour tout renseignements complémentaires, vous pouvez nous contacter soit par t
 					·
 					<a href="#">Faq</a>
 					·
-					<a href="#">Nous contacter</a>
+					<a href="contact.php">Nous contacter</a>
 				</p>
 
 				<p class="footer-realiser">Simplon-Epinal @ 2016</p>

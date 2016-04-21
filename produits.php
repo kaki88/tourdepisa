@@ -28,7 +28,7 @@
             </div>
 
 <div class='top'></div>
-<div class='logo'></div>
+<a href="index.php"><div class='logo'></div></a>
 <div class='titre'>Tour de Pisa</div>
 <div class='tel'>03 29 33 88 88</div>
 <div class='sstitre'>Pizzas au feu de bois sur place ou à emporter</div>
@@ -71,7 +71,7 @@ foreach($xml as $pizza){
         <h3><span>Tour de Pisa</span></h3>
 
         <p class="footer-liens">
-          <a href="#">Accueil</a>
+          <a href="index.php">Accueil</a>
           ·
           <a href="#">Blog</a>
           ·
@@ -79,7 +79,7 @@ foreach($xml as $pizza){
           ·
           <a href="#">Faq</a>
           ·
-          <a href="#">Nous contacter</a>
+          <a href="contact.php">Nous contacter</a>
         </p>
 
         <p class="footer-realiser">Simplon-Epinal @ 2016</p>
