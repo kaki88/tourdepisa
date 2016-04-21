@@ -10,6 +10,8 @@
    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="js/jssor.slider.min.js"></script>
    <title>Restaurant Tour de Pisa</title>
 </head>
@@ -158,23 +160,49 @@ Pour tout renseignements complémentaires, vous pouvez nous contacter soit par t
 
 		<div class="divers">
 	
-		
+	<div class="fonctionnnement">
+    <h2>Comment ça marche?</h2>
+    <div class="etapea">
+      <div class="wrap">
+        <div>
+          <h3>Sélectionnez un plat</h3>
+          <span class="count">1</span>
+          <span class="txt">Entrez votre localité et choisissez votre repas!</span>
+        </div>
+      </div>
+    </div>
+    <div class="etapeb">
+      <div class="wrap">
+        <div>
+          <h3>Paiement facile et sécurisé</h3>
+          <span class="count">2</span>
+          <span class="txt">
+Payez par Creditcard, PayPal, Bitcoin ou en espèces </span>
+        </div>
+      </div>
+    </div>
+    <div class="etapec">
+      <div class="wrapc">
+        <div>
+          <h3>Faites-vous livrer!</h3>
+          <div class="count">3</div>
+          <div class="txt only-mobile"> Bon appétit!<br/><a class="promovideolink" href="#" onclick="xmlRequest('/showPromoVideo.php','&amp;rurl=//player.vimeo.com/video/110762335','promovideo',false,false,'promovideo  animated');return false;"><i class="fa fa-video-camera"></i> Regarder la vidéo</a></div>
+          <div class="txt only-desktop"> Bon appétit!<br/><a class="promovideolink" href="#" onclick="xmlRequest('/showPromoVideo.php','&amp;rurl=//player.vimeo.com/video/110762335','promovideo',false,false,'promovideo  animated');return false;"><i class="fa fa-video-camera"></i> Regarder la vidéo</a></div>
+          <div class="takeawayCar"><img src="" alt=""/></div>
+        </div>
+      </div>
+    </div>	
 		
 		
 </div>
-<!--
-	<div class="position">
-		<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2660.729523409728!2d6.448813315324119!3d48.173293979226386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4793a088b59d44f3%3A0xc0633ec5e0ae57e4!2sCCI+-+Chambre+de+commerce+et+d&#39;industrie+des+Vosges!5e0!3m2!1sfr!2sfr!4v1461152306750" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-	</div>
---> 
-
+</div>
 </div>
 
 
 <footer class="footer">
 			<div class="footer-gauche">
 
-				<h2><span>Tour de Pisa</span></h2>
+				<h3><span>Tour de Pisa</span></h3>
 
 				<p class="footer-liens">
 					<a href="index.php">Accueil</a>

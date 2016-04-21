@@ -517,6 +517,8 @@ margin-top:-50px;
         padding:20px;
         width:200px;
         color:olive;
+        font-family:Caveat;
+        font-size: 20px;
 
 }
 
@@ -555,5 +557,54 @@ margin-top:-50px;
         .jssora12r.jssora12rdn { background-position: -315px -37px; }
 
 .cadre {
-        margin-left:400px;
+        border: 1px solid black;
+        width: 500px;
+        height: 30px;
+        border-radius:5px;
+        margin: 10px 10px 10px 300px;
+        background-color: olive;
+         font-family:Itim;
+         font-size: 25px;
+         text-align: center;
+}
+
+
+.fonctionnnement {
+      margin-left: 240px;
+      padding: 10px;
+}
+
+.etapea {
+     width: 46%;
+      height: 200px;
+      border: 2px solid black;
+      border-radius: 5px;
+      background-color: blue;
+      padding: 10px;
+}
+
+.etapeb {
+      width: 46%;
+      height: 200px;
+      border: 2px solid black;
+      border-radius: 5px;
+      background-color: orange;
+      float: right;
+      margin-top: -223px;
+      padding: 10px;
+}
+.etapec {
+      width: 616px;
+      height: 200px;
+      border: 2px solid black;
+      border-radius: 5px;
+      background-color: red;
+      margin-top: 5px;
+      padding: 10px;
+}
+
+.wrapsc {
+	background-image:url(images/livraison.png);
+	 background-size: 130px 100px;
+    background-repeat: no-repeat;
 }
