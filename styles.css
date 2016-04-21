@@ -309,12 +309,13 @@ width: 900px;
 	width: 900px;
 	border: 2px solid red;
 	margin: auto;
-	height: 1200px;
+	height: 1050px;
 	background-color: white;
 }
 
 .hor {
 	text-decoration:underline;
+
 }
 
 
@@ -512,13 +513,13 @@ margin-top:-50px;
 
 .info {
         float:left;
-        border: solid 1px black;
         position:absolute;
         padding:20px;
         width:200px;
         color:olive;
         font-family:Caveat;
         font-size: 20px;
+        margin-top: -35px;
 
 }
 
@@ -566,12 +567,26 @@ margin-top:-50px;
          font-family:Itim;
          font-size: 25px;
          text-align: center;
+         margin-bottom: 60px;
+}
+.cadree {
+        border: 1px solid black;
+        width: 500px;
+        height: 30px;
+        border-radius:5px;
+        margin: 10px 10px 10px 50px;
+        background-color: olive;
+         font-family:Itim;
+         font-size: 25px;
+         text-align: center;
+         margin-bottom: 60px;
 }
 
 
 .fonctionnnement {
       margin-left: 240px;
       padding: 10px;
+      margin-top: 40px;
 }
 
 .etapea {
@@ -581,6 +596,10 @@ margin-top:-50px;
       border-radius: 5px;
       background-color: blue;
       padding: 10px;
+      text-align: center;
+      font-family: Indie Flower;
+      font-size: 20px;
+      font-weight: bold;
 }
 
 .etapeb {
@@ -592,6 +611,10 @@ margin-top:-50px;
       float: right;
       margin-top: -223px;
       padding: 10px;
+      text-align: center;
+      font-family: Indie Flower;
+      font-size: 20px;
+      font-weight: bold;
 }
 .etapec {
       width: 616px;
@@ -601,10 +624,39 @@ margin-top:-50px;
       background-color: red;
       margin-top: 5px;
       padding: 10px;
+      text-align: center;
+      font-family: Indie Flower;
+      font-size: 20px;
+      font-weight: bold;
 }
 
 .wrapsc {
 	background-image:url(images/livraison.png);
 	 background-size: 130px 100px;
     background-repeat: no-repeat;
+}
+.bidon {
+	font-family: Righteous;
+	font-size:25px;
+	padding-left:25px;
+}
+.count {
+	font-size:100px;
+	position:absolute;
+	font-family: Righteous;
+	margin-top:-110px;
+}
+.counta {
+	font-size:100px;
+	position:absolute;
+	font-family: Righteous;
+	margin-top:-110px;
+	margin-left:-10px;
+}
+.countb {
+	font-size:100px;
+	position:absolute;
+	font-family: Righteous;
+	margin-top:-140px;
+	margin-left:-30px;
 }

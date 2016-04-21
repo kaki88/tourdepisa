@@ -12,6 +12,7 @@
 	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="js/jssor.slider.min.js"></script>
    <title>Restaurant Tour de Pisa</title>
 </head>
@@ -90,12 +91,12 @@
 	<div class="info">
 		<p>
 		<h3 class="hor">Horaire d'ouverture:</h3>
-		<br></br>
-
+    <br></br>
+		
 		
 Notre pizzéria est ouverte 7/7 jours. Voici nos horaires d'ouverture:
 <br></br>
-<br></br>
+
 <li>Lundi: 11h30 à 14h00 et de 18h00 à 22h00</li>
 <li>Mardi: 11h30 à 14h00 et de 18h00 à 22h00</li>
 <li>Mercredi: 11h30 à 14h00 et de 18h00 à 22h00</li>
@@ -107,13 +108,13 @@ Notre pizzéria est ouverte 7/7 jours. Voici nos horaires d'ouverture:
 <br></br>
 <p>
 		<h3 class="hor">Contact:</h3>
-		<br></br>
+		
 		
 Pour tout renseignements complémentaires, vous pouvez nous contacter soit par téléphone soit par mail. Voici nos coordonnées:
 <br></br>
-<br></br>
+
 		<li>tourdepisa</li>
-		<li>Téléphone: 03 29 33 88 88</li>
+		<li>Téléphone: 0329338888</li>
 		<li>Adresse: 1 place du Général de Gaulle</li>
 		<li>Adresse mail: tourdepisa@wanadoo.fr</li>
 		
@@ -161,12 +162,12 @@ Pour tout renseignements complémentaires, vous pouvez nous contacter soit par t
 		<div class="divers">
 	
 	<div class="fonctionnnement">
-    <h2>Comment ça marche?</h2>
+    <div class="cadree">Comment ça marche?</div>
     <div class="etapea">
       <div class="wrap">
         <div>
-          <h3>Sélectionnez un plat</h3>
-          <span class="count">1</span>
+          <h3 class="bidon">Sélectionnez un plat</h3>
+          <span class="counta">1</span>
           <span class="txt">Entrez votre localité et choisissez votre repas!</span>
         </div>
       </div>
@@ -174,8 +175,8 @@ Pour tout renseignements complémentaires, vous pouvez nous contacter soit par t
     <div class="etapeb">
       <div class="wrap">
         <div>
-          <h3>Paiement facile et sécurisé</h3>
-          <span class="count">2</span>
+          <h3 class="bidon">Paiement facile et sécurisé</h3>
+          <span class="countb">2</span>
           <span class="txt">
 Payez par Creditcard, PayPal, Bitcoin ou en espèces </span>
         </div>
@@ -184,10 +185,9 @@ Payez par Creditcard, PayPal, Bitcoin ou en espèces </span>
     <div class="etapec">
       <div class="wrapc">
         <div>
-          <h3>Faites-vous livrer!</h3>
+          <h3 class="bidon">Faites-vous livrer!</h3>
           <div class="count">3</div>
           <div class="txt only-mobile"> Bon appétit!<br/><a class="promovideolink" href="#" onclick="xmlRequest('/showPromoVideo.php','&amp;rurl=//player.vimeo.com/video/110762335','promovideo',false,false,'promovideo  animated');return false;"><i class="fa fa-video-camera"></i> Regarder la vidéo</a></div>
-          <div class="txt only-desktop"> Bon appétit!<br/><a class="promovideolink" href="#" onclick="xmlRequest('/showPromoVideo.php','&amp;rurl=//player.vimeo.com/video/110762335','promovideo',false,false,'promovideo  animated');return false;"><i class="fa fa-video-camera"></i> Regarder la vidéo</a></div>
           <div class="takeawayCar"><img src="" alt=""/></div>
         </div>
       </div>
