@@ -302,15 +302,21 @@ h1 {
 width: 900px;
  margin-left:auto;
     margin-right:auto;
-	height: 800px;
+	margin-bottom:135px;
+	height: 700px;
+	  border-radius: 5px;
+    border: 1px solid black;
+     background-color: #FCFCFC;
 }
 
 .block900 {
 	width: 900px;
-	border: 2px solid red;
+		  border-radius: 5px;
+    border: 1px solid black;
+     background-color: #FCFCFC;
 	margin: auto;
 	height: 1050px;
-	background-color: white;
+
 }
 
 .hor {
@@ -343,9 +349,9 @@ li {
 }
 
 .lesprix {
-   font: normal 20px 'Cookie', cursive;
+   font: normal 15px 'Righteous', cursive;
    font-weight: bold;
-   margin-top: -8px;
+   margin-top: -25px;
 }
 
 .ajpanier {
@@ -359,7 +365,7 @@ li {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  height: 25px;
+  height: 22px;
   position: relative;
   cursor: pointer;
   top: 0;
@@ -372,7 +378,8 @@ li {
   -o-text-overflow: clip;
   text-overflow: clip;
   background: rgba(142,142,142,1);
-
+   text-decoration: none;
+   padding: 2px 5px 0px 5px;
 }
 
 .enjoy-css:hover {
@@ -424,8 +431,7 @@ input:focus, textarea:focus {
    margin: 0 auto;
     height: 520px;
   width: 900px;
-    border: 1px solid #CCC;
-    border-radius: 1em;
+    border-radius: 5px;
     border: 1px solid black;
      background-color: #FCFCFC;
 
@@ -514,12 +520,12 @@ margin-top:-50px;
 .info {
         float:left;
         position:absolute;
-        padding:20px;
+        padding: 0px 20px 20px 20px;
         width:200px;
         color:olive;
         font-family:Caveat;
         font-size: 20px;
-        margin-top: -35px;
+        margin-top: -10px;
 
 }
 
@@ -594,7 +600,7 @@ margin-top:-50px;
       height: 200px;
       border: 2px solid black;
       border-radius: 5px;
-      background-color: blue;
+      background-color: #249DF2;
       padding: 10px;
       text-align: center;
       font-family: Indie Flower;
@@ -621,7 +627,7 @@ margin-top:-50px;
       height: 200px;
       border: 2px solid black;
       border-radius: 5px;
-      background-color: red;
+      background-color: #FF3400;
       margin-top: 5px;
       padding: 10px;
       text-align: center;
@@ -645,6 +651,7 @@ margin-top:-50px;
 	position:absolute;
 	font-family: Righteous;
 	margin-top:-110px;
+	margin-left:-6px;
 }
 .counta {
 	font-size:100px;
@@ -660,3 +667,5 @@ margin-top:-50px;
 	margin-top:-140px;
 	margin-left:-30px;
 }
+
+

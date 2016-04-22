@@ -1,9 +1,6 @@
----------------------------------
 <?php
   session_start();
 ?>
-
-----------------------------------
 <!doctype html>
 <html lang='fr'>
 <head>
@@ -47,12 +44,6 @@
 
 
 <div class="contacts">
- <div class="mapcontact">
-    <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10641.818392451098!2d6.441593!3d48.178592!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3184cd6e4faf2ff0!2sCentre+d&#39;affaires!5e0!3m2!1sen!2sfr!4v1461139258912" width="390" height="390" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
---------------------------------------------------------------------------------
-    <div class="container">
-     <div class="starter-template">
 
       <?php if(array_key_exists('errors', $_SESSION)): ?>
        <div class="alert alert-danger">
@@ -63,60 +54,50 @@
       
 <?php if(array_key_exists('success', $_SESSION)): ?>
        <div class="alert alert-success">
-           Votre e-mail nous est bien pervenu ! :)
+           Votre e-mail nous est bien parvenu ! :)
           <?= implode('<br>', $_SESSION['errors']); ?>
        </div>
     
       <?php unset($_SESSION['errors']); endif; ?>
       
-
-
-
-
        <form action="post_contact.php" method="POST">
-        <div class="row">
-        <div class="col-md-6">
-         <div class="form-group">
-           <label for="inputname">Nom</label>
-           <input type="text" name="name" class="form-control" id="inputname" value="<?= isset($_SESSION['inputs']['name']) ? $_SESSION['inputs']['name'] : ''; ?>"
+	      <div class="mapcontact">
+    <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10641.818392451098!2d6.441593!3d48.178592!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3184cd6e4faf2ff0!2sCentre+d&#39;affaires!5e0!3m2!1sen!2sfr!4v1461139258912" width="390" height="390" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+         <div>
+           <label class="foor"  for="inputname">Nom</label>
+           <input type="text" name="name" class="put" id="inputname" value="<?= isset($_SESSION['inputs']['name']) ? $_SESSION['inputs']['name'] : ''; ?>">
           </div>
+         <div>
+           <label class="foor" for="inputfirstname">Prenom</label>
+           <input type="text" name="firstname" class="put" id="inputfirstname" value="<?= isset($_SESSION['inputs']['firstname']) ? $_SESSION['inputs']['firstname'] : ''; ?>">
+        
+		</div>
+ <div>
+           <label class="foor" for="inputadress">Adresse</label>
+           <input type="text" name="adress" class="put" id="inputadress" value="<?= isset($_SESSION['inputs']['adress']) ? $_SESSION['inputs']['adress'] : ''; ?>">
+        
+		</div>
+ <div>
+           <label class="foor" for="inputtel">N°Tel.</label>
+           <input type="text" name="tel" class="put" id="inputtel" value="<?= isset($_SESSION['inputs']['tel']) ? $_SESSION['inputs']['tel'] : ''; ?>">
+        
+		</div>
+         <div>
+           <label class="foor" for="inputmail">Mail</label>
+           <input type="text" name="mail" class="put" id="inputmail" value="<?= isset($_SESSION['inputs']['mail']) ? $_SESSION['inputs']['mail'] : ''; ?>">
+          
          </div>
- <div class="col-md-6">
-         <div class="form-group">
-           <label for="inputfirstname">Prenom</label>
-           <input type="text" name="firstname" class="form-control" id="inputfirstname" value="<?= isset($_SESSION['inputs']['firstname']) ? $_SESSION['inputs']['firstname'] : ''; ?>"
+         <div>
+           <label class="foorm" for="inputmessage">Message</label>
+           <textarea id="inputmessage" name="message" class="message"><?= isset($_SESSION['inputs']['message']) ? $_SESSION['inputs']['message'] : ''; ?></textarea>
           </div>
-         </div>
- <div class="col-md-6">
-         <div class="form-group">
-           <label for="inputadress">Adresse</label>
-           <input type="text" name="adress" class="form-control" id="inputadress" value="<?= isset($_SESSION['inputs']['adress']) ? $_SESSION['inputs']['adress'] : ''; ?>"
-          </div>
-         </div>
- <div class="col-md-6">
-         <div class="form-group">
-           <label for="inputtel">N°Tel.</label>
-           <input type="text" name="tel" class="form-control" id="inputtel" value="<?= isset($_SESSION['inputs']['tel']) ? $_SESSION['inputs']['tel'] : ''; ?>"
-          </div>
-         </div>
- <div class="col-md-6">
-         <div class="form-group">
-           <label for="inputmail">Mail</label>
-           <input type="text" name="mail" class="form-control" id="inputmail" value="<?= isset($_SESSION['inputs']['mail']) ? $_SESSION['inputs']['mail'] : ''; ?>"
-          </div>
-         </div>
- <div class="col-xs-6">
-         <div class="form-group">
-           <label for="inputmessage">Message</label>
-           <textarea id="inputmessage" name="message" class="form-control"><?= isset($_SESSION['inputs']['message']) ? $_SESSION['inputs']['message'] : ''; ?></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Envoyer</button>
-         </div>
+         <input class= "boutonc" type="submit" value="Envoyer"> 
+ <input class= "boutona" type="submit" value="Effacer" onclick="return resetForm(this.form);"> 
          </div>
        </form>
     </div>
-</div>
------------------------------------------------------------------------------
+
 
 <footer class="footer">
             <div class="footer-gauche">
@@ -205,7 +186,7 @@ function resetForm(form) {
 </script>
 </body>
 <html>
-----------------------------------------------------
+
 <?php
 
 unset($_SESSION['inputs']); 
@@ -213,6 +194,5 @@ unset($_SESSION['success']);
 unset($_SESSION['errors']);
 
 ?>
---------------------------------------------------
     
 
