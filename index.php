@@ -188,7 +188,7 @@ Payez par Creditcard, PayPal, Bitcoin ou en espèces </span>
           <h3 class="bidon">Faites-vous livrer!</h3>
           <div class="count">3</div>
           <div class="txt only-mobile"> Bon appétit!<br/><a class="promovideolink" href="#" onclick="xmlRequest('/showPromoVideo.php','&amp;rurl=//player.vimeo.com/video/110762335','promovideo',false,false,'promovideo  animated');return false;"><i class="fa fa-video-camera"></i> Regarder la vidéo</a></div>
-          <div class="takeawayCar"><img src="" alt=""/></div>
+          <div class="takeawayCar"><img class="liv" src="images/livraison.png" alt=""/></div>
         </div>
       </div>
     </div>	
