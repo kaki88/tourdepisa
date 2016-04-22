@@ -349,7 +349,7 @@ li {
 }
 
 .lesprix {
-   font: normal 15px 'Righteous', cursive;
+   font: normal 13px 'Righteous', cursive;
    font-weight: bold;
    margin-top: -25px;
 }
@@ -656,7 +656,7 @@ margin-top:-50px;
 	position:absolute;
 	font-family: Righteous;
 	margin-top:-140px;
-	margin-left:0px;
+	margin-left:l0px;
 }
 .countb {
 	font-size:100px;

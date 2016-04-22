@@ -64,8 +64,8 @@ foreach($xml as $pizza){
   $pizza->nom.'</h3><div class="image-box truc"><img class="lspizza" src="images/'.
   $img.'"></div><div class="text-desc"><h3>'.
   $pizza->nom.'</h3><p class="hi">'.$pizza->composition.'<p>
-  <p class="lesprix"><form action=""><input type="radio" name="gender">  '.$pizza->prix->attributes()->taille_l.'€ l &nbsp;&nbsp;<input type="radio" name="gender">'.
-  $pizza->prix->attributes()->taille_xl.'€ xl &nbsp;&nbsp; <input type="radio" name="gender">'.$pizza->prix->attributes()->taille_xxl.'€ xxl</br></br><p><div class="ajpanier">
+  <p class="lesprix"><form action=""><input type="radio" name="gender">  '.$pizza->prix->attributes()->taille_l.'€l &nbsp;<input  type="radio" name="gender">'.
+  $pizza->prix->attributes()->taille_xl.'€xl &nbsp; <input type="radio" name="gender">'.$pizza->prix->attributes()->taille_xxl.'€xxl</br></br><p><div class="ajpanier">
   </form><form id="myform" method="POST" action="#">
     <input type="button" value="-" class="qtyminus" field="quantity" />
     <input type="text" name="quantity" id="lolz" value="1" class="qty" />
